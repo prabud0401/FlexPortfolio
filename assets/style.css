@@ -3,6 +3,17 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background-color: #f8f9fa; /* Light background color */
+    color: #495057; /* Dark text color */
+    font-family: 'Arial', sans-serif; /* Choose an appropriate font */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/background-image.png");
+    background-size: cover;
+
 }
 
 /* Main content container */
@@ -15,8 +26,10 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #333;
+    background-color: #343a40; /* Dark background color for navigation */
     padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 nav ul {
@@ -34,21 +47,32 @@ nav a {
     font-weight: bold;
     font-size: 16px;
 }
+.topImg{
+height: 300px;
+width: 100%;
+margin-bottom: 25px;
+background-image: url("../images/topImg.jpg");
+background-size: cover;
+background-position: center;
+border-radius: 8px;
+}
 
 /* About Me Section styling with CSS Grid */
 #about-me {
+    border-radius: 8px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     align-items: center;
     text-align: left;
     padding: 50px;
-    background-color: #f2f2f2;
+    background-color: #e9ecef; /* Light background color */
 }
 
 #about-me h1 {
     font-size: 2.5rem;
     margin-bottom: 10px;
+    color: #212529; /* Dark text color */
 }
 
 #about-me img {
@@ -60,12 +84,13 @@ nav a {
 #about-me p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #333;
+    color: #495057; /* Dark text color */
 }
-
 
 /* Work Section styling */
 #work {
+    color: white;
+    border-radius: 8px;
     text-align: center;
     padding: 50px;
     display: flex;
@@ -80,11 +105,9 @@ nav a {
 
 .project img {
     max-width: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #adb5bd; /* Border color */
     border-radius: 5px;
 }
-
-
 
 /* Additional Contact Details Styling */
 #contact .contact-details {
@@ -98,27 +121,52 @@ nav a {
 }
 
 #contact .contact-details a {
-    color: #333;
+    color: #495057; /* Dark text color */
     text-decoration: none;
     font-weight: bold;
 }
 
 #contact .contact-details a:hover {
-    color: #555;
+    color: #212529; /* Darker text color on hover */
 }
 
+/* Add this to your existing styles */
+#contact{
 
+    background-image: url("../images/background-image.png");
+    background-size: cover;
 
-/* Responsive design - adjust as needed */
-@media only screen and (max-width: 600px) {
-    nav ul {
-        flex-direction: column;
-        text-align: left;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+    z-index: -1;
 }
 
+.contact-content {
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#contact .contact-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    list-style-type: none;
+    padding: 0;
+}
+
+#contact .contact-details li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#contact .contact-details a {
+    color: #495057;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Add the following to your existing styles to include Font Awesome icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
