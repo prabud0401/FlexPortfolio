@@ -84,12 +84,29 @@ nav a {
     border-radius: 5px;
 }
 
-/* Contact Section styling */
-#contact {
-    text-align: center;
-    padding: 50px;
-    background-color: #f2f2f2;
+
+
+/* Additional Contact Details Styling */
+#contact .contact-details {
+    list-style-type: none;
+    padding: 0;
 }
+
+#contact .contact-details li {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#contact .contact-details a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact .contact-details a:hover {
+    color: #555;
+}
+
 
 
 /* Responsive design - adjust as needed */
